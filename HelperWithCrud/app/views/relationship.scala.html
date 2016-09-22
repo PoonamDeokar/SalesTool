@@ -1,0 +1,15 @@
+
+@(message:String)
+<center>
+<form action="@routes.RelationshipController.addDetails()" method="get">
+<h3>One To One(Person and PersonDetail)</h3>
+ Name: <input type="text" name="name"/><br/><br/>
+ Job : <input type="text" name="job"/><br/><br/>
+Income: <input type="text" name="income"/><br/>
+<br/>
+<input type="submit" value="Add Data">
+</form>
+
+@* relationship Template File 
+
+*@

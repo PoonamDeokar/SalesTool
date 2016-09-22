@@ -1,0 +1,12 @@
+package model;
+
+@Entity
+public class Student extends Model{
+	
+	@id
+	//@Generatedvalue(Strategy=GenerationType.AUTO)
+	public int id;
+	private String name;
+	
+
+}

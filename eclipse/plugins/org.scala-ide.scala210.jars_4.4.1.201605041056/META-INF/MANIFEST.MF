@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.scala-ide.scala210.jars;singleton:=true
+Archiver-Version: Plexus Archiver
+Built-By: antoras
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Vendor: scala-ide.org
+Eclipse-ExtensibleAPI: true
+Bundle-Name: Scala 2.10 jars
+Bundle-Version: 4.4.1.201605041056
+Bundle-Localization: plugin
+Created-By: Apache Maven 3.2.3
+Build-Jdk: 1.8.0_92
+

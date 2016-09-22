@@ -1,0 +1,35 @@
+package controllers;
+
+import models.Employee;
+import models.Student;
+import play.data.Form;
+import play.mvc.*;
+import views.html.*;
+
+
+public class HomeController extends Controller {
+
+  
+    public Result index() {
+        return ok(index.render("Your new application is ready."));
+    }
+
+ 
+    public static Employee emp;
+    
+    public Result addEmployee(){
+    	emp=Form.form(Employee.class).bindFromRequest().get();
+    	if(emp!=null)
+    	{
+    		emp.save();
+    		return redirect(routes.HomeController.index());
+    	}
+    	
+    	return ok("Records Saved Successfully");
+    }
+    
+    
+    
+    
+    
+}

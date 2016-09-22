@@ -1,0 +1,51 @@
+
+@(message: String)
+
+@main("Welcome to Play") {
+
+  
+  	<form action ="@routes.HomeController.addEmp" method="post">
+ 
+    	<center>
+    	<h2>Employee Form </h2>
+    	<table>
+    	<tr>
+    		<th>First Name :</th>
+    		<th><input type="text" name="fname"></th>
+    	</tr>
+    	<tr>
+    		<th>Last Name :</th>
+    		<th><input type="text" name="lname"></th>
+    	</tr>
+    	<tr>
+    		<th>Password :</th>
+    		<th><input type="password" name="pass"></th>
+    	</tr>
+    	<tr>
+    		<th>Gender :</th>
+    		<th><input type="radio" name="gen" value="male">Male<br></th>
+    		<th><input type="radio" name="gen" value="fmale">Female<br></th>
+    	</tr>
+    	<tr>
+    		<th>Salary</th>
+    		<th><input type="text" name="sal"></th>
+    	</tr>
+    	   
+    	 </table>
+    	 <input type="submit"  value="submit"/>
+    	</center>
+    </form>
+    
+    <form action="@routes.HomeController.getEmp()" method="get">
+    Employee Details :<select name="eid">
+    <option value="0">Select</option>
+    @for(emp<-Employee.find.all()){
+    
+ 	 	<option value="@emp.id">@emp.id</option>
+    }
+    </select><br>
+    <input type="submit" value="GetEmpData"/>
+    </form>
+    
+    
+}

@@ -1,0 +1,9 @@
+@* manytomany Template File *@
+@(message: String)
+<form action="@routes.ManyToMany.addManyToMany" method="post">
+<h3>Many to Many (Event & Delegate)</h3>
+ Event Name: <input type="text" name="eventName"/><br/><br/>
+ Delegate Name : <input type="text" name="delegateName"/><br/><br/>
+<input type="submit" value="Add Data">
+</form>
+</center>

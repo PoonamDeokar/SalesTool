@@ -1,0 +1,18 @@
+package models;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import com.avaje.ebean.Model;
+
+@Entity
+public class Cust extends Model{
+	
+	@Id
+	public Long eid;
+	public String fname;
+	public String lname;
+	public String pass;
+	public String gender;
+	public long sal;
+}

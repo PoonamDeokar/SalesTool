@@ -1,0 +1,6 @@
+@* addingCompany Template File *@
+@(compform: Form[Company])
+@helper.form(action=routes.AddCompanyController.Submit()){
+	@helper.inputText(compform("email"))
+	@helper.inputText(compform("address"))
+}

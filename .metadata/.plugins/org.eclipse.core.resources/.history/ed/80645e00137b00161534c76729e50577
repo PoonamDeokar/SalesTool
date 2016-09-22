@@ -1,0 +1,25 @@
+
+@(message: String)
+
+@main("Welcome to Play") {
+
+   <form action="@routes.HomeController.addStudent()" method="post">
+  
+    Student name : <input type="text" name="sname"/><br>
+    Mobile No :<input type="text" name="mno"/><br>
+    <input type="submit" value="Add_Student"/>
+    </form>
+    <form action="@routes.HomeController.addStudent" method="post">
+    	<h2>Student Form </h2>
+    	<table>
+    	<tr>
+    		<th>Name</th>
+    		<th><input type="text" name="sname"></th>
+    	</tr>
+    	<tr>
+    		<th>Mobile Number</th>
+    		<th><input type="text" name="mno"></th>
+    	</tr>
+    	</table>
+    </form>
+}

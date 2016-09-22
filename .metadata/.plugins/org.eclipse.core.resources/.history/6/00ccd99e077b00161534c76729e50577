@@ -1,0 +1,23 @@
+package controllers;
+
+import models.Student;
+import play.data.Form;
+import play.mvc.Controller;
+import play.mvc.Result;
+import views.html.index;
+
+public class Application extends Controller{
+	
+	public static Student stud;
+	
+	 public Result index() {
+	        return ok(index.render("Your new application is ready."));
+	  }
+	public Result addStudent(){
+		stud=Form.form(Student.class).bindFromRequest().get();
+		
+		if(stud)
+		return ok("saved");
+	
+}
+}

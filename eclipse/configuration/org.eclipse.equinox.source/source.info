@@ -1,0 +1,9 @@
+#encoding=UTF-8
+#version=1
+org.scala-ide.sbt.compiler.interface.source,0.13.8.v-201605041056-92a3ed3,plugins/org.scala-ide.sbt.compiler.interface.source_0.13.8.v-201605041056-92a3ed3.jar,-1,false
+org.scala-lang.modules.scala-parser-combinators.source,1.0.3,plugins/org.scala-lang.modules.scala-parser-combinators.source_1.0.3.jar,-1,false
+org.scala-lang.modules.scala-swing.source,1.0.1,plugins/org.scala-lang.modules.scala-swing.source_1.0.1.jar,-1,false
+org.scala-lang.modules.scala-xml.source,1.0.3,plugins/org.scala-lang.modules.scala-xml.source_1.0.3.jar,-1,false
+org.scala-lang.scala-compiler.source,2.11.8.v20160304-115712-1706a37eb8,plugins/org.scala-lang.scala-compiler.source_2.11.8.v20160304-115712-1706a37eb8.jar,-1,false
+org.scala-lang.scala-library.source,2.11.8.v20160304-115712-1706a37eb8,plugins/org.scala-lang.scala-library.source_2.11.8.v20160304-115712-1706a37eb8.jar,-1,false
+org.scala-lang.scala-reflect.source,2.11.8.v20160304-115712-1706a37eb8,plugins/org.scala-lang.scala-reflect.source_2.11.8.v20160304-115712-1706a37eb8.jar,-1,false

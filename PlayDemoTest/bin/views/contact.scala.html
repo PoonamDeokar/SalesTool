@@ -1,0 +1,8 @@
+@* contact Template File *@
+
+@(contact: Form[Contact])
+@main(){
+@helper.form(action=routes.ContactController.ContactSubmit()){
+	@helper.inputText(contact("fname"))
+}
+}

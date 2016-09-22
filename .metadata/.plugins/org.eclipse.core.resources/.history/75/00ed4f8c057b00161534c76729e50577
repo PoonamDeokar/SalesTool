@@ -1,0 +1,9 @@
+
+@(message: String)
+
+@main("Welcome to Play") {
+
+    <form action="@routes.Application.addStudent()" method="post">
+    @play20.welcome(message, style = "Java")
+
+}

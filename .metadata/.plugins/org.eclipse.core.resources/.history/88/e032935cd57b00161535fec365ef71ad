@@ -1,0 +1,54 @@
+
+@(message: String)
+
+@main("Welcome to Play") {
+
+  
+  	<form action ="@routes.HomeController.addEmp()" method="post">
+ 
+    	<center>
+    	<h2>Adding Employee Details </h2>
+    	<table>
+    	<tr>
+    		<th>First Name :</th>
+    		<th><input type="text" name="fname"></th>
+    	</tr>
+    	<tr>
+    		<th>Last Name :</th>
+    		<th><input type="text" name="lname"></th>
+    	</tr>
+    	<tr>
+    		<th>Password :</th>
+    		<th><input type="password" name="pass"></th>
+    	</tr>
+    	<tr>
+    		<th>Gender :</th>
+    		<th><input type="radio" name="gen" value="male">Male<br></th>
+    		<th><input type="radio" name="gen" value="fmale">Female<br></th>
+    	</tr>
+    	<tr>
+    		<th>Salary</th>
+    		<th><input type="text" name="sal"></th>
+    	</tr>
+    	   
+    	 </table>
+    	 <input type="submit"  value="Add Data"/>
+    	</center>
+    </form>
+    
+    <from action="@routes.HomeController.deleteEmp()" method="post">
+    <h2>Deleteting Employee Details</h2>
+    
+    Select Employee Name : <select fname="eid">
+    <option value="0">select</option>
+    @for(emp<-Employee.find.all){
+    	<option value=@emp.eid>@emp.eid</option>
+    }
+    </select><br>
+    <input type="submit" value="Delete"/>
+    	
+    </from>
+   
+    
+    
+}

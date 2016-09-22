@@ -1,0 +1,22 @@
+
+@(message: String)
+
+@main("Welcome to Play") {
+
+  
+    <form action="@routes.HomeController.addStudent" method="post">
+    	<center>
+    	<h2>Student Form </h2>
+    	<table>
+    	<tr>
+    		<th>Name</th>
+    		<th><input type="text" name="sname"></th>
+    	</tr>
+    	<tr>
+    		<th>Mobile Number</th>
+    		<th><input type="text" name="mno"></th>
+    	</tr>
+    	</table>
+    	</center>
+    </form>
+}

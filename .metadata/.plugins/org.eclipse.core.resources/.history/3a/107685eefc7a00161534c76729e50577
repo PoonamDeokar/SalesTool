@@ -1,0 +1,11 @@
+package controllers;
+
+import models.Student;
+import play.mvc.Controller;
+
+public class Application extends Controller{
+	
+	public static Student stud;
+	
+
+}

@@ -1,0 +1,82 @@
+package controllers;
+
+import java.util.List;
+
+import com.avaje.ebean.Ebean;
+import com.avaje.ebeaninternal.api.BindParams.Param;
+
+import models.Employee;
+import play.data.DynamicForm;
+import play.data.Form;
+import play.mvc.*;
+import views.html.*;
+
+
+public class HomeController extends Controller {
+
+	  public static Employee emp;
+	
+	    
+  
+    public Result index() {
+        return ok(index.render("Your new application is ready."));
+    }
+
+  //inserting value to database
+  
+    public Result addEmp(){
+    	emp=Form.form(Employee.class).bindFromRequest().get();
+    	if(emp!=null)
+    	emp.save();
+    	return redirect(routes.HomeController.index());	
+    }
+    
+    
+   //retriving values from database
+    
+  /* public Result getEmp(){
+	   List<Employee> name=Employee.find.all();
+   		for(Employee emp : name){
+   			System.out.println(emp.fname);
+   		}
+	   
+	   return redirect(routes.HomeController.index());	
+	   
+   }*/
+    	/*DynamicForm form=DynamicForm.form().bindFromRequest();
+    	String name=form.get("eid");
+    	Long id=Long.parseLong(name);
+    	
+    	return ok(render(Employee.find.byId(id)));*/
+    	
+    /*	List<Employee> name=Employee.find.all();
+    	for(Employee emp : name){
+    	System.out.println(emp.name);
+    	}
+    	return redirect(routes.HomeController.index());
+    	*/
+    	
+  //  }
+    
+    
+    //deleting employee deatils
+    
+    public Result deleteEmp(){
+    	emp=Form.form(Employee.class).bindFromRequest().get();
+    	List<Employee> emp1=Ebean.find(Employee.class).where().eq("fname",emp.fname).findList();
+    	if(emp!=null)
+    
+    		Ebean.delete(emp1);
+    		return redirect(routes.HomeController.index());
+    		//return ok("Employee Details"+" "+emp.fname+"are deleted");
+       }
+    
+    //updating Employee Details
+    public Result updateEmp(){
+    	emp=Form.form(Employee.class).bindFromRequest().get();
+    	if(emp!=null)
+    		emp.update();
+    	return redirect(routes.HomeController.index());
+    }
+    
+}

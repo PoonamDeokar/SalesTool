@@ -1,0 +1,27 @@
+package models;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import com.avaje.ebean.Model;
+
+@Entity
+public class Employee extends Model {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	public Long eid;
+	public String fname;
+	public String lname;
+	public String pass;
+	public String gen;
+	public long sal;
+	
+	
+	
+	
+	
+
+}

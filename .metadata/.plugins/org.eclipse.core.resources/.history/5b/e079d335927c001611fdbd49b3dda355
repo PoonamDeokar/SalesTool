@@ -1,0 +1,16 @@
+package models;
+
+import javax.persistence.Entity;
+
+import com.avaje.ebean.Model;
+
+@Entity
+public class Company extends Model {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.Auto)
+	
+	
+	
+
+}

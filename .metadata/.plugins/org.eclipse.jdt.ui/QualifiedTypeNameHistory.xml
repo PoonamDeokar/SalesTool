@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="play.data.DynamicForm"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="views.html.helper.form"/>
+<fullyQualifiedTypeName name="models.Contact"/>
+<fullyQualifiedTypeName name="play.api.data.Form"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.Id"/>
+<fullyQualifiedTypeName name="play.mvc.Controller"/>
+<fullyQualifiedTypeName name="play.data.Form"/>
+<fullyQualifiedTypeName name="models.Company"/>
+<fullyQualifiedTypeName name="play.mvc.Result"/>
+<fullyQualifiedTypeName name="com.avaje.ebean.Model.Finder"/>
+<fullyQualifiedTypeName name="com.avaje.ebean.Model"/>
+</qualifiedTypeNameHistroy>

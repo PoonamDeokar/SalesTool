@@ -1,0 +1,6 @@
+@* displayAllEmp Template File *@
+@(emp: Employee)
+@emp:eid
+@emp.fname
+@emp.lname
+@emp.sal

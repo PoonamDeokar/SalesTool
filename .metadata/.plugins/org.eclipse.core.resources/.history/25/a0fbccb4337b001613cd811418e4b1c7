@@ -1,0 +1,63 @@
+package models;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import com.avaje.ebean.Model;
+
+@Entity
+public class Employee extends Model {
+	
+	@Id
+	public Long eid;
+	private String ename;
+	private String elname;
+	private String password;
+	private String gender;
+	private long salary;
+	
+	
+	public String getEname() {
+		return ename;
+	}
+	public void setEname(String ename) {
+		this.ename = ename;
+	}
+	public String getElname() {
+		return elname;
+	}
+	public void setElname(String elname) {
+		this.elname = elname;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	public long getSalary() {
+		return salary;
+	}
+	public void setSalary(long salary) {
+		this.salary = salary;
+	}
+	
+	@Override
+	public String toString() {
+		return "Employee [eid=" + eid + ", ename=" + ename + ", elname="
+				+ elname + ", password=" + password + ", gender=" + gender
+				+ ", salary=" + salary + "]";
+	}
+	
+	public static Finder<Long, Employee> find =  new Model.Finder<Long, Employee>(Employee.class);
+	
+	
+	
+
+}

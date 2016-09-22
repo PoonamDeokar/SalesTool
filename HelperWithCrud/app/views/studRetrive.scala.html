@@ -1,0 +1,13 @@
+
+@* 
+@(myform: Form[Student])
+@helper.form(action=routes.StudentRetrive.studRetrive()){
+	@helper.select(field=myform("id"));
+	<option value="0" >select</option>
+	@for(stud<-Student.find.all()){
+		<option value="@stud.id">@stud.id</option>
+	}
+	<input type="submit" value="DisplayAllData"/>
+
+	}
+	*@

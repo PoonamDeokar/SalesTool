@@ -1,0 +1,7 @@
+@* displayAllEmp Template File *@
+@for(emp<- Employee.find.all()){
+@emp:eid
+@emp.fname
+@emp.lname
+@emp.sal
+}

@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: 1.8.0_92 (Oracle Corporation)
+
+Name: icon.xpm
+SHA-256-Digest: K5+yR66ms6hHu1d7JQZdYaKX2vUrEofaFD/SRsyWuSE=
+
+Name: eclipse
+SHA-256-Digest: gzj/yDhUxB2SIm/xaDa7mCcglJfZmcsODK0UsQT6H+s=
+

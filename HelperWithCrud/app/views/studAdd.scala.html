@@ -1,0 +1,12 @@
+@* studAdd Template File *@
+@(myform: Form[Student])
+@helper.form(action=routes.StudentAdd.studAdd()){
+	<center>
+	<h2> Student Form</h2>
+	@helper.inputText(myform("studentName"))
+	@helper.inputText(myform("lName"))
+	@helper.inputText(myform("phone_no"))
+	
+	<input type="submit" value="AddStudent"/>
+	</center>
+}
